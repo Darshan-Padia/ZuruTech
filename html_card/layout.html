@@ -1,72 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to the great news</title>
 
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        #heading{
+
+        #heading {
             font-size: x-large;
         }
-        Article{
-            padding: 5px;
-            width: 70%;
-            height: 80% ;
-            display:inline-block;
 
-            /* border: 5px; */
-            border-style: groove;
-            border-width: 5px;
-            border-radius: 5px;
-        }
-        #links{
-            width: 25%;
-            /* display:inline-block; */
-            float: right;
-            height: 70% ;
-            
-            padding-left: 5px;
-            border-style: groove;
-            border-width: 5px;
-            border-radius: 5px;
-        }
-        #rights{
+        
+
+        #rights {
             /* display: inline-block; */
             margin-top: 5px;
             height: 100px;
             line-break: 10%;
             text-align: center;
-            border-style: groove;
-            border-bottom: 5px;
+            border-style: solid;
+            border-bottom: 2px;
+        }
+
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-child {
+            flex: 1;
+            padding-left: 5px;
+            padding-bottom: 50px;
+            border: 2px solid;
+        }
+
+        .flex-child:first-child {
+            margin-right: 20px;
         }
     </style>
 </head>
+
 <body>
-    <Article >
-        <div id = 'heading'>Welcome to the great news </div>
-        <h1>Article Heading</h1>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br>
-        <h2>Subsection</h2>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br>
-        <h2>Another subsection</h2>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. <br>
 
-    </Article>
+    <div class="flex-container">
 
-    <div id = 'links'>
-        <h2>Links</h2>
-        <li>Link 1</li>
-        <li>Link 2</li>
-        <li>Link 3</li>
-        <li>Link 4</li>
+        <div class="flex-child Article">
+                <div id='heading'>Welcome to the great news </div>
+                <h1>Article Heading</h1>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum. <br>
+                <h2>Subsection</h2>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum. <br>
+                <h2>Another subsection</h2>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum. <br>
+
+        </div>
+
+        <div class="flex-child Links">
+                <h2>Links</h2>
+                <li>Link 1</li>
+                <li>Link 2</li>
+                <li>Link 3</li>
+                <li>Link 4</li>
+
+        </div>
 
     </div>
-    <div id = 'rights' >
+
+    <div id='rights'>
         copyright 2050 by Darshan. All rights reserved.
     </div>
 </body>
+
 </html>
