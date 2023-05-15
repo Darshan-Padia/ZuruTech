@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Farewell Party Survey Form</title>
+    <style>
+        body{
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
-    
+    <form>  
+
+    <label for="name">Name</label>
+    <input type="text" id = 'name' placeholder="Enter your name">
+    <br>
+    <label for="email">Email</label>
+    <input type="text" id = 'email' placeholder="Enter your email">
+    <br>
+    <label for="age">Age</label>
+    <input type="text" placeholder="Enter your age">
+    <br>
+    <label for="designation">Which option best describes you?</label>
+    <select>  
+    <option value="student">student</option>
+    <option value="student">teacher</option>
+    <option value="student">parent</option>
+
+    </select> 
+    <br>
+    Will you attend the party? 
+    <input type="radio" name="radio_b1" id="radio_b1" >
+    <label for="radio_yes">yes</label>
+    <input type="radio" name="radio_b1" id="radio_b1" >
+    <label for="radio_no">no</label>
+    <br>
+    what did you like about the program?
+    <br>
+    <input type="checkbox" name="ch1" id="ch1">
+    <label for="ch1">Training</label> <br>
+    <input type="checkbox" name="ch1" id="ch1">
+    <label for="ch1">The learning sessions from the industry experts</label> <br>
+    <input type="checkbox" name="ch1" id="ch1">
+    <label for="ch1">community meetups</label> <br>
+    <input type="checkbox" name="ch1" id="ch1">
+    <label for="ch1">brown bag sessions</label> <br>
+    <input type="checkbox" name="ch1" id="ch1">
+    <label for="ch1">switching to hybrid mode</label> <br>
+    <input type="checkbox" name="ch1" id="ch1">
+    <label for="ch1">food, office etc</label> <br>
+
+    <label for="comments">Any comments or suggestions</label>
+    <textarea name="" id="" cols="10" rows="1"></textarea>
+
+    <br>
+    <button>reset</button>
+    <button>submit</button>
+
+
+    </form>  
+
 </body>
 </html>
