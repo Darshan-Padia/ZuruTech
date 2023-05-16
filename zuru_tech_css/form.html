@@ -1,62 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    body {
+        max-width: 800px;
+        margin: auto;
+        background-color: skyblue;
+    }
+
+    .grid-container {
+        display: grid;
+    /*grid-template-columns: 66vh 20vh;*/
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(13, 35px);
+    grid-gap: 1em;
+    padding: 1.2em; 
+    text-align: right;
+    }
+    .form-grid {
+    display: grid;
+    /*grid-template-columns: 66vh 20vh;*/
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(13, 35px);
+    grid-gap: 1em;
+    padding: 1.2em; 
+    text-align: right;
+}
+
+.grid-container > label {
+    justify-self: end;
+    align-self: center;
+    font-size: 14px;
+    max-width: 30vw;
+}
+
+.grid-container > input, #radiobutton-div,
+#dropdown, #checkboxes {
+    justify-self: start;
+}
+
+    .content {
+        /* display: flex; */
+        width: 800px;
+        /* max-width: 00px; */
+
+        background-color: white;
+        padding: 13px;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: bold;
+    }
+
+    .left_side {
+        display: inline-block;
+        text-align: right;
+        width: 40%;
+        padding-right: 15px;
+        margin-left: 10%;
+    }
+
+    .right_side {
+        margin-left: 50%;
+        text-align: left;
+    }
+</style>
+
 <body>
-    Let us know if we can improve freecodecamp <br>
-    
-    <label for="name">Name</label>
-    <input type="text" id = 'name' placeholder="Enter your name">
-    <br>
-    <label for="email">Email</label>
-    <input type="text" id = 'email' placeholder="Enter your email">
-    <br>
-    <label for="age">Age</label>
-    <input type="number" placeholder="Enter your age">
-
-    <label for="designation">Which option best describes you?</label>
-    <select>  
-    <option value="student">student</option>
-    <option value="teacher">teacher</option>
-    <option value="parent">parent</option>
-
-    </select> 
-    <br>
-
-   How likely will you recommend freecodecamp to your friend? 
-    <input type="radio" name="radio_b1" id="radio_b1" >
-    <label for="radio_yes">definitley</label>
-    <input type="radio" name="radio_b1" id="radio_b1" >
-    <label for="radio_no">maybe</label>
-    <input type="radio" name="radio_b1" id="radio_b1" >
-    <label for="radio_no">not sure</label>
-    <br>
+    <h1>
+        survey form
+    </h1>
+    <div class="grid-container">
+        <p style="text-align: center;">Let us know if we can improve freecodecamp <br></p>
 
 
-    <label for="designation">what do you like most in fcc?</label>
-    <select>  
-    <option value="good">good</option>
-    <option value="better">better</option>
-    <option value="best">best</option>
 
-    </select> 
+        <label for="name" class="left_side">*Name : </label>
+        <input type="text" id='name' placeholder="Enter your name">
+        <label for="email" class="left_side">* Email : </label>
+        <input type="text" id='email' placeholder="Enter your email">
+        <label for="age" class="left_side">* Age : </label>
+        <input type="number" placeholder="Enter your age">
+        <label for="designation" class="left_side">Which option best describes you?</label>
+        <select>
+            <option class="right_side" value="student">student</option>
+            <option class="right_side" value="teacher">teacher</option>
+            <option class="right_side" value="parent">parent</option>
+
+        </select>
+
+        <p class="left_side">*How likely will you recommend freecodecamp to your friend? </p>
+        <input type="radio" name="radio_b1" id="radio_b1">
+        <label for="radio_yes">definitley</label>
+        <input class="right_side" type="radio" name="radio_b1" id="radio_b1">
+        <label for="radio_no">maybe</label>
+        <input class="right_side" type="radio" name="radio_b1" id="radio_b1">
+        <label for="radio_no">not sure</label>
+        <br>
 
 
-    <br>
-    Things to improve in future..
-    <br>
-    <input type="checkbox" name="ch1" id="ch1">
-    <label for="ch1">front-end-proj</label> <br>
-    <input type="checkbox" name="ch1" id="ch2">
-    <label for="ch2">back-end-proj</label> <br>
-    <input type="checkbox" name="ch1" id="ch3">
-    <label for="ch3">data visualisation</label> <br>
-    
+        <label for="likeness" class="left_side">what do you like most in fcc?</label>
+        <select>
+            <option class="right_side" value="good">good</option>
+            <option class="right_side" value="better">better</option>
+            <option class="right_side" value="best">best</option>
 
-    <br>
+        </select>
+
+
+        <br>
+        <p class="left_side"> Things to improve in future..</p>
+        <br>
+        <input class="right_side" type="checkbox" name="ch1" id="ch1">
+        <label for="ch1">front-end-proj</label> <br>
+        <input class="right_side" type="checkbox" name="ch1" id="ch2">
+        <label for="ch2">back-end-proj</label> <br>
+        <input class="right_side" type="checkbox" name="ch1" id="ch3">
+        <label for="ch3">data visualisation</label> <br>
+
+        <br>
+    </div>
+
 
 </body>
+
 </html>

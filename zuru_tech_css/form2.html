@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            max-width: 500px;
+            
+            background-color: skyblue;
+        }
+        .grid-layout{
+            display: grid;
+            background-color: white;
+            grid-template-columns: 2;
+            grid-template-rows: 7;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>survey form</h1>
+    <div class = 'main'></div>
+    <div class = 'grid-layout'>
+        <form action="">
+
+            <div class = name>
+                <label for="name" >*Name : </label>
+                <input type="text" id='name' placeholder="Enter your name">
+            </div>
+
+            <div class = email>
+                <label for="email" >* Email : </label>
+                <input type="text" id='email' placeholder="Enter your email">
+            </div>
+
+            <div class = age>
+                <label for="age" >* Age : </label>
+                <input type="number" placeholder="Enter your age">
+            </div>
+
+            <div class = dr1>
+                <label for="designation" class="left_side">Which option best describes you?</label>
+                <select>
+                    <option value="student">student</option>
+                    <option value="teacher">teacher</option>
+                    <option value="parent">parent</option>
+
+                </select>
+            </div>
+
+
+            <div class = rb1>
+                <p >*How likely will you recommend freecodecamp to your friend? </p> 
+                <input type="radio" name="radio_b1" id="radio_b1">
+                <label for="radio_yes">definitley</label>
+                <input  type="radio" name="radio_b1" id="radio_b1">
+                <label for="radio_no">maybe</label>
+                <input  type="radio" name="radio_b1" id="radio_b1">
+                <label for="radio_no">not sure</label>
+            </div>
+
+            <div class = dr2>
+                <label for="likeness" >what do you like most in fcc?</label>
+                <select>
+                    <option value="good">good</option>
+                    <option value="better">better</option>
+                    <option value="best">best</option>
+        
+                </select>
+            </div>
+
+            <div class = ch1>
+                
+                <p > Things to improve in future..</p>
+                <br>
+                <input  type="checkbox" name="ch1" id="ch1">
+                <label for="ch1">front-end-proj</label> <br>
+                <input  type="checkbox" name="ch1" id="ch2">
+                <label for="ch2">back-end-proj</label> <br>
+                <input  type="checkbox" name="ch1" id="ch3">
+                <label for="ch3">data visualisation</label> <br>
+
+            </div>
+
+
+        </form>
+    </div>
+</body>
+</html>

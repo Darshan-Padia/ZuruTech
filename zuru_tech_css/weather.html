@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,
+        h2,
+        p,
+        h3 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 3px;
+            color: white;
+        }
+
+
+
+        .wrapper {
+            /* width=device-width; */
+            display: flex;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+
+        .wl,
+        .wr {
+
+            background-color: rgb(11, 152, 203, 0.2);
+            box-shadow: 50px;
+            margin: 20px;
+            border: 2px solid;
+            border-radius: 5px;
+            height: 300px;
+            /* float: left; */
+            width: 600px;
+            padding: 20px;
+
+
+        }
+
+        .wl {
+            margin-left: 13%;
+
+        }
+
+        .wr {
+            margin-right: 13%;
+
+        }
+
+        .wr_in {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .wr_in > div {
+        width: 40%;     
+    }
+
+        .right {
+            margin-left: auto;
+        }
+
+        .left_s {
+            padding-right: 10px;
+        }
+
+        .right_s {
+            padding-left: 10px;
+        }
+
+        .days {
+            display: block;
+            background-color: rgb(11, 152, 203, 0.2);
+
+            box-shadow: 5px;
+            border: 2px solid;
+            border-radius: 5px;
+            margin: auto;
+            height: 300px;
+            width: 50%;
+        }
+
+        .left {}
+    </style>
+</head>
+
+
+<body style="    background-image: linear-gradient(to right, rgb(11, 152, 203) , rgb(0, 255, 213));">
+    <h1 style="text-align: center; font-family: Arial, Helvetica, sans-serif; letter-spacing: 3px;
+    color: white;">WEATHER TEMPLATE</h1>
+
+    <div class="wrapper">
+        <div class='wl'>
+            <p style="font-size: small;"><b>LOCAL WEATHER REPORT</b>
+                <p>
+                    <HR>
+                    </HR>
+                    <table style="width: 100%;">
+                        <tr>
+                            <td class='left_s' rowspan="5"><img style="padding-left: 80px;" height="200px" width="240px"
+                                    src="sun.png" alt="sun image"></td>
+                            <td class='right_s'>
+                                <p style="font-size: larger;"><b>SUNDAY</b></p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <!-- <td>r2c1</td> -->
+                            <td class='right_s'>
+                                <p style="font-size: small;"><b>SUNNY</b></p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <!-- <td>r3c1</td> -->
+                            <td class='right_s'></td>
+                        </tr>
+
+                        <tr>
+                            <!-- <td>r4c1</td> -->
+                            <td class='right_s'>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- <td>r5c1</td> -->
+                            <td class='right_s'>
+                                <p style="font-size: larger;"><b>22 C</b></p>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class='left_s'>
+                                <p style="font-size: smaller">14 KM/H SW</p>
+                            </td>
+                            <td class='right_s'>
+                                <p style="font-size: larger;"><b>71.6 F</b></p>
+                            </td>
+                        </tr>
+                    </table>
+
+
+        </div>
+
+
+        <div class='wr'>
+            <p style="font-size: small; display: block;"><b> SEA FORECAST REPORT</b>
+                <p>
+                    <hr>
+                    </hr>
+                    <div class="wr_in">
+                        <div class="left">
+                            <p style="text-align: left;"><b>WIND SPEED</b>(KNOTS)</p>
+                        </div>
+                        <div class="right">
+                            <p><b>13</b></p>
+                        </div>
+
+                        <div class="left">
+                            <p style="text-align: left;"><b>WIND SPEED</b>(KNOTS)</p>
+                        </div>
+                        <div class="right">
+                            <p><b>13</b></p>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class='days'>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
